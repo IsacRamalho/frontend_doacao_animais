@@ -1,0 +1,109 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal-body {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 32px 32px 24px 32px;
+    min-width: 320px;
+    max-width: 95vw;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.modal-body h2 {
+    font-family: 'League Spartan', 'Roboto', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #3b3b3b;
+    letter-spacing: 1px;
+}
+
+.input-container,
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal-body label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #444;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.modal-body input {
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f8fafc;
+    transition: border 0.2s;
+}
+
+.modal-body input:focus {
+    border: 1.5px solid #007bff;
+    outline: none;
+    background: #fff;
+}
+
+.btn-secondary,
+button[type="submit"] {
+    margin-top: 18px;
+    color: #272323 !important;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-secondary:hover,
+button[type="submit"]:hover {
+    background: #00b327;
+}
+
+button.cancel-btn,
+button:not([type="submit"]):not(.close-btn) {
+    margin-top: 10px;
+    background: #06d5e4;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button.cancel-btn {
+    background-color: rgb(236, 52, 52) !important;
+}
+
+button.cancel-btn:hover,
+button:not([type="submit"]):not(.close-btn):hover {
+    background: #bdbdbd;
+    background-color: rgb(161, 147, 147) !important;
+}
+

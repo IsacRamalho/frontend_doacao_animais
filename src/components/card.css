@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.card-descr {
+    text-align: center;
+    line-height: 1.5; 
+    margin-top: 10px; /* Espaço acima da descrição */
+    font-family: 'League Spartan', 'Roboto', Arial, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin: 8px 0 4px 0;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+}
+.card button {
+    margin-top: 10px; /* Espaço acima do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    background-color: #28a745 !important; /* Cor verde para o botão (pode ajustar conforme necessário) */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave para cor de fundo */
+}
+
+.card button:hover {
+    background-color: #218838; /* Cor mais escura ao passar o mouse */
+}
+
+.card p {
+    font-size: 14px; /* Tamanho da fonte */
+    margin: 5px 0; /* Margem entre parágrafos */
+}
+
+.card-descr {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 10px;
+    font-family: 'League Spartan', 'Roboto', Arial, sans-serif;
+}
+
+body {
+    font-family: 'League Spartan', 'Roboto', Arial, sans-serif;
+}

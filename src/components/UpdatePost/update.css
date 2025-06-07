@@ -1,0 +1,100 @@
+.modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 32px 32px 24px 32px;
+    min-width: 320px;
+    max-width: 95vw;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    max-height: 80vh;      /* Limita a altura máxima do modal */
+    overflow-y: auto;      /* Adiciona rolagem vertical se necessário */
+}
+
+.modal-content h2 {
+    font-family: 'League Spartan', 'Roboto', Arial, sans-serif;
+    font-size: 2rem;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #3b3b3b;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #444;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+input {
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #f8fafc;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border: 1.5px solid #007bff;
+    outline: none;
+    background: #fff;
+}
+
+button[type="submit"] {
+    margin-top: 18px;
+    background: #007bff;
+    color: #00beee;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+button:not([type="submit"]) {
+    margin-top: 10px;
+    background: #06d5e4;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    
+    
+}
+
+button:not([type="submit"]):hover {
+    background: #bdbdbd;
+}

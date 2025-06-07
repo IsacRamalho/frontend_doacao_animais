@@ -1,0 +1,79 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.card-grid {
+    display: flex; /* Usar flexbox para os cards */
+    flex-wrap: wrap; /* Permitir que os cards se movam para a próxima linha */
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center; /* Centralizar os cards */
+}
+
+.card {
+    width: 260px;
+    border: none;
+    border-radius: 18px;
+    background: #f8f9fa;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.08);
+    padding: 24px 20px 20px 20px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.16), 0 3px 8px rgba(0,0,0,0.12);
+    background: #ffffff;
+    transform: translateY(-6px) scale(1.03);
+}
+
+button {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+    margin: 10px 0; /* Margem acima e abaixo do botão */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'League Spartan', 'Roboto', Arial, sans-serif;
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+}
+
+button:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-family: 'Rancho', cursive;
+    font-size: 60px; /* Tamanho da fonte do título */
+}
+
+.header {
+    width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.header-img {
+    width: 100vw;
+    max-width: 100vw;
+    height: 180px; /* ajuste a altura conforme desejar */
+    object-fit: cover;
+    display: block;
+}
