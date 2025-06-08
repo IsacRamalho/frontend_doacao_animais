@@ -1,54 +1,42 @@
-# React + TypeScript + Vite
+<h1>Projeto de Desenvolvimento Web - Site PetAdota - Backend</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Alunos: Amanda Pereira e Isac Ramalho Sena de Lima</h2>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="#pre-requisites">Pré-requisitos</a> *
+  <a href="#how-to-use">Instalando o projeto</a> *
+  <a href="#related">Backend</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esta aplicação foi desenvolvida pelo grupo como parte dos requisitos para a aprovação na disciplina "Programação Orientada a Objetos 3", do UNICEUB. O projeto foi realizado utilizando Java Spring e Spring MVC para efetuar a criação do servidor, Spring Data JPA para persistência de dados e para manipulá-los, H2 como banco de dados e Lombok para gerar boilerplates. Foram utilizados, no projeto como um todo, o Framework Springboot, React + Vite, Maven e React Query. O objetivo geral era criar uma aplicação web CRUD.
 
-## Expanding the ESLint configuration
+<h2 id="pre-requisites"> Pré-Requisitos</h2> 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Para rodar este projeto, é necessário ter o Java instalado.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+<h2 id="how-to-use"> Instalando o projeto</h2>
+
+Primeiramente, é necessário clonar o repositório:
+
+```bash
+# Você deve clonar o projeto:
+
+$ git clone https://github.com/Fernanda-Kipper/frontend-cardapio.git
+$ cd frontend-cardapio
+
+Para instalar as dependências, execute o seguinte comando:
+
+$ npm install
+Por último, para executar o projeto basta rodar o seguinte:
+
+$ npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<h2 id="related"> Integração com Backend</h2>
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+É preciso clonar o projeto e rodar localmente.
+
+<h2 id="related"> Referências/Agradecimentos</h2>
+
+Gostaríamos de destacar que foram de grande ajuda a WebConferência do professor Romes Heriberto, o canal da Fernanda Kipper (https://www.youtube.com/@kipperdev) e o canal do Rony Desenvolvedor (https://www.youtube.com/@ronydesenvolvedor), que contribuíram bastante no entendimento das práticas relacionadas à SpringBoot, React e outras tecnologias utilizadas.
