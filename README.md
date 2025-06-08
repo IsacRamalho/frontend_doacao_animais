@@ -21,8 +21,8 @@ Primeiramente, é necessário clonar o repositório:
 ```bash
 # Você deve clonar o projeto:
 
-$ git clone https://github.com/Fernanda-Kipper/frontend-cardapio.git
-$ cd frontend-cardapio
+$ git clone https://github.com/IsacRamalho/frontend_doacao_animais/
+$ cd frontend_doacao_animais
 
 Para instalar as dependências, execute o seguinte comando:
 
