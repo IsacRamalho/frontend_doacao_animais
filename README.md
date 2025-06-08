@@ -1,4 +1,4 @@
-<h1>Projeto de Desenvolvimento Web - Site PetAdota - Backend</h1>
+<h1>Projeto de Desenvolvimento Web - Site PetAdota - Frontend</h1>
 
 <h2>Alunos: Amanda Pereira e Isac Ramalho Sena de Lima</h2>
 
